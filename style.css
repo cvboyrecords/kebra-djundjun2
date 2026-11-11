@@ -1,0 +1,523 @@
+:root {
+    --bg-dark: #0a0d14;
+    --card-bg: #121824;
+    --champagne-gold: #e6c687;
+    --gold-light: #f4e3be;
+    --gold-border: rgba(230, 198, 135, 0.25);
+    --text-white: #f8fafc;
+    --text-muted: #94a3b8;
+    --whatsapp-green: #25D366;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-white);
+    line-height: 1.6;
+}
+
+/* Announcement Bar */
+.top-announcement {
+    background: linear-gradient(90deg, #121824 0%, #1e2738 50%, #121824 100%);
+    color: var(--champagne-gold);
+    text-align: center;
+    padding: 8px 15px;
+    font-size: 0.85rem;
+    border-bottom: 1px solid var(--gold-border);
+    letter-spacing: 0.5px;
+}
+
+/* Header Alta Joalharia */
+.main-header {
+    padding: 30px 5%;
+    background-color: var(--bg-dark);
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lang-selector {
+    display: flex;
+    gap: 5px;
+}
+
+.lang-btn {
+    background: transparent;
+    border: 1px solid var(--gold-border);
+    color: var(--text-white);
+    padding: 5px 9px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.lang-btn.active, .lang-btn:hover {
+    background-color: var(--champagne-gold);
+    color: var(--bg-dark);
+    font-weight: bold;
+}
+
+.brand-center {
+    text-align: center;
+}
+
+.logo-wrapper {
+    width: 85px;
+    height: 85px;
+    margin: 0 auto 10px auto;
+    border-radius: 50%;
+    padding: 3px;
+    background: linear-gradient(135deg, var(--champagne-gold), transparent);
+    box-shadow: 0 0 20px rgba(230, 198, 135, 0.2);
+}
+
+.brand-logo {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.brand-title {
+    font-size: 1.6rem;
+    color: var(--champagne-gold);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.brand-tagline {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    letter-spacing: 1px;
+}
+
+.header-badge .cv-seal {
+    font-size: 0.85rem;
+    color: var(--champagne-gold);
+    border: 1px solid var(--gold-border);
+    padding: 6px 12px;
+    border-radius: 20px;
+    background: rgba(230, 198, 135, 0.05);
+}
+
+/* Hero Section */
+.hero-elite {
+    padding: 70px 20px 50px 20px;
+    text-align: center;
+    background: radial-gradient(circle at 50% 20%, #171f30 0%, var(--bg-dark) 70%);
+}
+
+.luxury-badge {
+    display: inline-block;
+    color: var(--champagne-gold);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: 300;
+    max-width: 850px;
+    margin: 0 auto 20px auto;
+    color: var(--text-white);
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    max-width: 680px;
+    margin: 0 auto 35px auto;
+}
+
+.trust-pills {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    font-size: 0.95rem;
+}
+
+/* Heritage Section */
+.heritage-section {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.gold-subtitle {
+    color: var(--champagne-gold);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+}
+
+.section-title h3 {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.heritage-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.heritage-card {
+    background: var(--card-bg);
+    border: 1px solid var(--gold-border);
+    padding: 30px;
+    border-radius: 12px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.heritage-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-number {
+    font-size: 2rem;
+    color: var(--champagne-gold);
+    opacity: 0.5;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.heritage-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: var(--gold-light);
+}
+
+.heritage-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+/* Pairing Section */
+.pairing-section {
+    padding: 20px 20px 50px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.pairing-card {
+    background: rgba(230, 198, 135, 0.04);
+    border: 1px dashed var(--gold-border);
+    border-radius: 12px;
+    padding: 25px 30px;
+    text-align: center;
+}
+
+.pairing-card h4 {
+    color: var(--champagne-gold);
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.pairing-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+/* Checkout Section */
+.checkout-elite {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.checkout-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--gold-border);
+    border-radius: 16px;
+    padding: 40px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+}
+
+.card-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card-header h3 {
+    color: var(--champagne-gold);
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.card-header p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.gourmet-boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.box-item {
+    background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 10px;
+    padding: 15px 10px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s;
+}
+
+.box-item:hover, .box-item.selected {
+    border-color: var(--champagne-gold);
+    background: rgba(230, 198, 135, 0.08);
+}
+
+.box-item.featured {
+    border-color: var(--champagne-gold);
+}
+
+.pop-tag {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--champagne-gold);
+    color: var(--bg-dark);
+    font-size: 0.65rem;
+    font-weight: bold;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+.box-title {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.box-desc {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.qty-section {
+    margin-bottom: 25px;
+}
+
+.qty-section label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    color: var(--text-muted);
+}
+
+.qty-picker {
+    display: flex;
+    align-items: center;
+    max-width: 150px;
+}
+
+.qty-picker button {
+    background: var(--champagne-gold);
+    color: var(--bg-dark);
+    border: none;
+    width: 38px;
+    height: 38px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.qty-picker button:first-child { border-radius: 6px 0 0 6px; }
+.qty-picker button:last-child { border-radius: 0 6px 6px 0; }
+
+.qty-picker input {
+    width: 70px;
+    height: 38px;
+    background: var(--bg-dark);
+    border: 1px solid var(--gold-border);
+    color: var(--text-white);
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.subtotal-box {
+    background: rgba(0,0,0,0.4);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 10px;
+    padding: 18px;
+    margin-bottom: 25px;
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+}
+
+.gold-amount {
+    font-size: 1.8rem;
+    color: var(--champagne-gold);
+    font-weight: bold;
+}
+
+.shipping-note {
+    font-size: 0.82rem;
+    color: var(--champagne-gold);
+    background: rgba(230, 198, 135, 0.08);
+    padding: 8px 12px;
+    border-radius: 6px;
+    border-left: 3px solid var(--champagne-gold);
+}
+
+.address-input {
+    margin-bottom: 25px;
+}
+
+.address-input label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    color: var(--text-muted);
+}
+
+.address-input textarea {
+    width: 100%;
+    height: 85px;
+    background: var(--bg-dark);
+    border: 1px solid var(--gold-border);
+    border-radius: 8px;
+    color: var(--text-white);
+    padding: 12px;
+    resize: none;
+    font-size: 0.95rem;
+}
+
+.cta-whatsapp {
+    width: 100%;
+    background-color: var(--whatsapp-green);
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.cta-whatsapp:hover {
+    transform: scale(1.02);
+    background-color: #20ba5a;
+}
+
+/* Gallery */
+.gallery-section {
+    padding: 50px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid var(--gold-border);
+}
+
+/* TikTok Section */
+.tiktok-elite {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.tiktok-container {
+    background: var(--card-bg);
+    border: 1px solid var(--gold-border);
+    border-radius: 16px;
+    padding: 35px;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.tiktok-container h4 {
+    color: var(--champagne-gold);
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.tiktok-container p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+}
+
+.tiktok-link {
+    display: inline-block;
+    background: #fe2c55;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: opacity 0.2s;
+}
+
+.tiktok-link:hover { opacity: 0.9; }
+
+/* Footer */
+.footer-elite {
+    text-align: center;
+    padding: 40px 20px;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.footer-terms {
+    margin-top: 10px;
+    font-size: 0.8rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}

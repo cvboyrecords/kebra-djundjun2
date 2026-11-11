@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kebra-Djundjun — Boutique Elegance & Tradição de Cabo Verde</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Banner Superior de Escassez / Lote Limitado -->
+    <div class="top-announcement">
+        <span data-i18n="topBanner">✨ Artesanal & Exclusivo: Lote semanal limitado para garantir frescura absoluta na Suíça.</span>
+    </div>
+
+    <!-- Header Centralizado de Alta Joalharia -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="lang-selector">
+                <button onclick="changeLang('cv')" class="lang-btn">🇨🇻 Crioulo</button>
+                <button onclick="changeLang('pt')" class="lang-btn active">🇵🇹 PT</button>
+                <button onclick="changeLang('fr')" class="lang-btn">🇫🇷 FR</button>
+                <button onclick="changeLang('en')" class="lang-btn">🇬🇧 EN</button>
+            </div>
+            
+            <div class="brand-center">
+                <div class="logo-wrapper">
+                    <img src="img/logo.png" alt="Kebra-Djundjun Logo" class="brand-logo">
+                </div>
+                <h1 class="brand-title">Kebra-Djundjun</h1>
+                <p class="brand-tagline" data-i18n="brandTagline">Bolachas Artesanais de Cabo Verde</p>
+            </div>
+
+            <div class="header-badge">
+                <span class="cv-seal">🇨🇻 Autenticidade Garantida</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section Minimalista de Luxo -->
+    <section class="hero-elite">
+        <div class="hero-container">
+            <span class="luxury-badge" data-i18n="heroBadge">✨ Haute Pâtisserie Traditionnelle</span>
+            <h2 class="hero-title" data-i18n="heroTitle">A Arte Suprema da Bolacha Tradicional de Cabo Verde</h2>
+            <p class="hero-subtitle" data-i18n="heroSubtitle">Uma experiência gastronómica rústica e refinada. Receita familiar guardada com carinho, confecionada à mão e entregue em toda a Suíça.</p>
+            
+            <div class="trust-pills">
+                <span>🍪 <strong data-i18n="pill1">100% Artesanal</strong></span>
+                <span>🇨🇭 <strong data-i18n="pill2">Envio para toda a Suíça</strong></span>
+                <span>❤️ <strong data-i18n="pill3">Tradição das Ilhas</strong></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Interativa de Storytelling: O Processo Artesanal de Cabo Verde -->
+    <section class="heritage-section">
+        <div class="section-title">
+            <span class="gold-subtitle" data-i18n="heritageSub">Savoir-Faire Único</span>
+            <h3 data-i18n="heritageTitle">O Nosso Processo Artesanal</h3>
+        </div>
+
+        <div class="heritage-grid">
+            <div class="heritage-card">
+                <div class="card-number">01</div>
+                <h4 data-i18n="step1Title">A Seleção Pura</h4>
+                <p data-i18n="step1Desc">Escolhemos rigorosamente os ingredientes mais nobres para recriar o sabor autêntico e inconfundível do arquipélago.</p>
+            </div>
+            <div class="heritage-card">
+                <div class="card-number">02</div>
+                <h4 data-i18n="step2Title">Segredo Familiar</h4>
+                <p data-i18n="step2Desc">Mãos experientes moldam cada bolacha seguindo a tradição ancestral transmitida de geração em geração.</p>
+            </div>
+            <div class="heritage-card">
+                <div class="card-number">03</div>
+                <h4 data-i18n="step3Title">Fornada Fresca</h4>
+                <p data-i18n="step3Desc">Cozedura lenta e cuidadosa para garantir a textura crocante e o aroma inconfundível que reconforta a alma.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sugestão de Degustação / Harmonização -->
+    <section class="pairing-section">
+        <div class="pairing-card">
+            <h4 data-i18n="pairingTitle">☕ O Momento Perfeito de Degustação</h4>
+            <p data-i18n="pairingDesc">As bolachas Kebra-Djundjun harmonizam perfeitamente com o seu café matinal espresso, um chá aromático quente ou como um acompanhamento digestivo refinado no final do dia.</p>
+        </div>
+    </section>
+
+    <!-- Checkout Visual Avançado / Sistema de Vendas -->
+    <section class="checkout-elite" id="encomendar">
+        <div class="checkout-card">
+            <div class="card-header">
+                <h3 data-i18n="calcTitle">Seleção & Encomenda Exclusiva</h3>
+                <p data-i18n="calcSub">Preço de referência: <strong>12 CHF</strong> por saco artesanal</p>
+            </div>
+
+            <!-- Seleção de Packs Gourmet -->
+            <div class="gourmet-boxes">
+                <div class="box-item" onclick="setPack(1)">
+                    <span class="box-title" data-i18n="box1Title">Gourmet Solo</span>
+                    <span class="box-desc">1 Saco (12 CHF)</span>
+                </div>
+                <div class="box-item featured" onclick="setPack(3)">
+                    <span class="pop-tag" data-i18n="popTag">Recomendado</span>
+                    <span class="box-title" data-i18n="box3Title">Gourmet Família</span>
+                    <span class="box-desc">3 Sacos (36 CHF)</span>
+                </div>
+                <div class="box-item" onclick="setPack(5)">
+                    <span class="box-title" data-i18n="box5Title">Gourmet Prestige</span>
+                    <span class="box-desc">5 Sacos (60 CHF)</span>
+                </div>
+            </div>
+
+            <!-- Ajuste de Quantidade -->
+            <div class="qty-section">
+                <label for="quantity" data-i18n="qtyLabel">Quantidade personalizada de sacos:</label>
+                <div class="qty-picker">
+                    <button type="button" onclick="adjustQty(-1)">−</button>
+                    <input type="number" id="quantity" value="1" min="1" max="50" oninput="updateTotal()">
+                    <button type="button" onclick="adjustQty(1)">+</button>
+                </div>
+            </div>
+
+            <!-- Total e Nota de Portes de Envio -->
+            <div class="subtotal-box">
+                <div class="price-row">
+                    <span data-i18n="subtotalText">Subtotal dos Produtos:</span>
+                    <span id="totalPrice" class="gold-amount">12 CHF</span>
+                </div>
+                <div class="shipping-note">
+                    <span>📦 <strong data-i18n="shipNote">Portes de envio na Suíça calculados no WhatsApp com o produtor conforme a morada exata.</strong></span>
+                </div>
+            </div>
+
+            <!-- Campo de Morada -->
+            <div class="address-input">
+                <label for="clientAddress" data-i18n="addressLabel">Morada Completa de Entrega na Suíça:</label>
+                <textarea id="clientAddress" placeholder="Rua, Número, Código Postal e Cidade (Ex: Rue du Rhône 40, 1204 Genève)" data-i18n-placeholder="addressPlaceholder"></textarea>
+            </div>
+
+            <!-- Botão de Ação WhatsApp Inteligente -->
+            <button onclick="sendWhatsAppOrder()" class="cta-whatsapp">
+                <span>💬</span> <span data-i18n="ctaBtn">Finalizar Encomenda no WhatsApp</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Galeria de Imagens de Produto -->
+    <section class="gallery-section">
+        <div class="gallery-grid">
+            <div class="gallery-card"><img src="img/bolacha.png" alt="Bolacha Artesanal Kebra-Djundjun"></div>
+            <div class="gallery-card"><img src="img/bolacha1.png" alt="Bolacha Fresca Kebra-Djundjun"></div>
+            <div class="gallery-card"><img src="img/bolacha2.png" alt="Produção Kebra-Djundjun"></div>
+            <div class="gallery-card"><img src="img/bolacha3.png" alt="Tradicional Kebra-Djundjun"></div>
+        </div>
+    </section>
+
+    <!-- Bloco Oficial TikTok -->
+    <section class="tiktok-elite">
+        <div class="tiktok-container">
+            <h4 data-i18n="tiktokTitle">📱 Siga o Nosso Processo no TikTok</h4>
+            <p data-i18n="tiktokDesc">Assista em direto aos bastidores da confecção tradicional e acompanhe o nosso trabalho artesanal.</p>
+            <a href="https://www.tiktok.com/@kebradjundjun8/video/7706987704839310614" target="_blank" class="tiktok-link">
+                Assistir no TikTok @kebradjundjun8 ↗
+            </a>
+        </div>
+    </section>
+
+    <!-- Rodapé Discreto e Legal -->
+    <footer class="footer-elite">
+        <p>© 2026 <strong>Kebra-Djundjun</strong>. Todos os direitos reservados.</p>
+        <p class="footer-terms" data-i18n="footerLegal">Termos de Encomenda & Política de Privacidade Simples. Pagamento e detalhes de envio acordados diretamente via WhatsApp com o produtor artesanal.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
