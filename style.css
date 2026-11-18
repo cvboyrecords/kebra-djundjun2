@@ -7,7 +7,6 @@
     --text-white: #f8fafc;
     --text-muted: #94a3b8;
     --whatsapp-green: #25D366;
-    --emerald-tag: #10b981;
 }
 
 * {
@@ -25,13 +24,14 @@ body {
 
 /* Announcement Bar */
 .top-announcement {
-    background: linear-gradient(90deg, #121824 0%, #1e2738 50%, #121824 100%);
+    background: linear-gradient(90deg, #121824 0%, #241d11 50%, #121824 100%);
     color: var(--champagne-gold);
     text-align: center;
-    padding: 8px 15px;
+    padding: 9px 15px;
     font-size: 0.85rem;
+    font-weight: 500;
     border-bottom: 1px solid var(--gold-border);
-    letter-spacing: 0.5px;
+    letter-spacing: 0.4px;
 }
 
 /* Header Alta Joalharia */
@@ -78,13 +78,13 @@ body {
 }
 
 .logo-wrapper {
-    width: 85px;
-    height: 85px;
-    margin: 0 auto 10px auto;
+    width: 88px;
+    height: 88px;
+    margin: 0 auto 12px auto;
     border-radius: 50%;
     padding: 3px;
     background: linear-gradient(135deg, var(--champagne-gold), transparent);
-    box-shadow: 0 0 20px rgba(230, 198, 135, 0.2);
+    box-shadow: 0 0 24px rgba(230, 198, 135, 0.25);
 }
 
 .brand-logo {
@@ -95,26 +95,32 @@ body {
 }
 
 .brand-title {
-    font-size: 1.6rem;
+    font-size: 1.45rem;
     color: var(--champagne-gold);
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 400;
+}
+
+.brand-title .amp {
+    color: var(--text-white);
+    font-style: italic;
 }
 
 .brand-tagline {
     font-size: 0.85rem;
     color: var(--text-muted);
     letter-spacing: 1px;
+    margin-top: 3px;
 }
 
 .header-badge .cv-seal {
     font-size: 0.85rem;
     color: var(--champagne-gold);
     border: 1px solid var(--gold-border);
-    padding: 6px 12px;
+    padding: 6px 14px;
     border-radius: 20px;
-    background: rgba(230, 198, 135, 0.05);
+    background: rgba(230, 198, 135, 0.06);
 }
 
 /* Hero Section */
@@ -136,7 +142,7 @@ body {
 .hero-title {
     font-size: 2.4rem;
     font-weight: 300;
-    max-width: 850px;
+    max-width: 860px;
     margin: 0 auto 20px auto;
     color: var(--text-white);
     line-height: 1.2;
@@ -144,17 +150,17 @@ body {
 
 .hero-subtitle {
     color: var(--text-muted);
-    font-size: 1.08rem;
-    max-width: 700px;
+    font-size: 1.06rem;
+    max-width: 720px;
     margin: 0 auto 30px auto;
 }
 
 .trust-pills {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 16px;
     flex-wrap: wrap;
-    font-size: 0.92rem;
+    font-size: 0.9rem;
 }
 
 .trust-pills span {
@@ -199,7 +205,6 @@ body {
     border: 1px solid var(--gold-border);
     padding: 30px;
     border-radius: 12px;
-    position: relative;
     transition: transform 0.3s ease;
 }
 
@@ -223,12 +228,12 @@ body {
 
 .heritage-card p {
     color: var(--text-muted);
-    font-size: 0.95rem;
+    font-size: 0.94rem;
 }
 
 /* Pairing Section */
 .pairing-section {
-    padding: 15px 20px 45px 20px;
+    padding: 10px 20px 45px 20px;
     max-width: 900px;
     margin: 0 auto;
 }
@@ -254,7 +259,7 @@ body {
 
 /* Checkout & Catálogo por Categorias */
 .checkout-elite {
-    padding: 45px 20px;
+    padding: 40px 20px;
     display: flex;
     justify-content: center;
 }
@@ -265,68 +270,115 @@ body {
     border-radius: 16px;
     padding: 35px;
     width: 100%;
-    max-width: 720px;
+    max-width: 780px;
     box-shadow: 0 15px 35px rgba(0,0,0,0.6);
 }
 
 .card-header {
     text-align: center;
-    margin-bottom: 28px;
+    margin-bottom: 24px;
 }
 
 .card-header h3 {
     color: var(--champagne-gold);
-    font-size: 1.7rem;
+    font-size: 1.75rem;
     font-weight: 400;
 }
 
 .card-header p {
     color: var(--text-muted);
-    font-size: 0.92rem;
+    font-size: 0.95rem;
     margin-top: 4px;
 }
 
-.dietary-ribbon {
-    display: inline-block;
-    margin-top: 12px;
-    background: rgba(16, 185, 129, 0.1);
-    border: 1px solid rgba(16, 185, 129, 0.35);
-    color: #6ee7b7;
-    font-size: 0.78rem;
-    font-weight: 600;
-    padding: 5px 14px;
-    border-radius: 20px;
-    letter-spacing: 0.4px;
+/* Botões Rápidos 1-Clique */
+.quick-packs-box {
+    background: rgba(230, 198, 135, 0.05);
+    border: 1px solid var(--gold-border);
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 25px;
 }
 
-/* Blocos de Categoria */
+.quick-label {
+    display: block;
+    font-size: 0.82rem;
+    color: var(--champagne-gold);
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.quick-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 10px;
+}
+
+.btn-quick {
+    background: var(--bg-dark);
+    border: 1px solid rgba(255,255,255,0.12);
+    color: var(--text-white);
+    padding: 12px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    transition: all 0.2s;
+}
+
+.btn-quick.featured {
+    border-color: var(--champagne-gold);
+}
+
+.btn-quick:hover {
+    border-color: var(--champagne-gold);
+    background: rgba(230, 198, 135, 0.1);
+}
+
+.btn-quick strong {
+    font-size: 0.9rem;
+    color: var(--gold-light);
+}
+
+.btn-quick span {
+    font-size: 0.8rem;
+    color: var(--champagne-gold);
+}
+
+/* Blocos de Categoria + Galerias Específicas */
 .catalog-categories {
     display: flex;
     flex-direction: column;
-    gap: 22px;
+    gap: 26px;
     margin-bottom: 28px;
 }
 
 .category-block {
-    background: rgba(10, 13, 20, 0.65);
-    border: 1px solid rgba(255, 255, 255, 0.06);
-    border-radius: 12px;
-    padding: 18px;
+    background: rgba(10, 13, 20, 0.75);
+    border: 1px solid var(--gold-border);
+    border-radius: 14px;
+    padding: 20px;
+}
+
+.category-block.natural-border {
+    border-color: rgba(134, 239, 172, 0.35);
 }
 
 .category-header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 14px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid rgba(230, 198, 135, 0.15);
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 15px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .cat-badge {
-    font-size: 0.95rem;
+    font-size: 1.05rem;
     font-weight: bold;
     color: var(--champagne-gold);
 }
@@ -335,42 +387,74 @@ body {
     color: #86efac;
 }
 
-.cat-note {
-    font-size: 0.78rem;
-    color: var(--text-muted);
+.cat-tag-ingredients {
+    font-size: 0.8rem;
+    color: var(--gold-light);
+    background: rgba(230, 198, 135, 0.08);
+    padding: 4px 10px;
+    border-radius: 6px;
+    display: inline-block;
+    width: fit-content;
 }
 
-.varieties-grid {
+.cat-tag-ingredients.natural {
+    color: #a7f3d0;
+    background: rgba(16, 185, 129, 0.1);
+}
+
+/* Tiras de Fotos por Categoria */
+.category-photos-strip {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 12px;
+    margin-bottom: 16px;
 }
 
-.variety-card {
-    background: var(--card-bg);
-    border: 1px solid var(--gold-border);
+.category-photos-strip img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
     border-radius: 10px;
-    padding: 14px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 12px;
-    transition: border-color 0.2s, transform 0.2s;
+    border: 1px solid var(--gold-border);
 }
 
-.variety-card:hover {
-    border-color: var(--champagne-gold);
-    transform: translateY(-2px);
+.category-photos-quad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.category-photos-quad img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid rgba(134, 239, 172, 0.3);
+}
+
+.product-action-card {
+    background: var(--card-bg);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 10px;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .variety-info {
+    flex: 1;
+    min-width: 240px;
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 5px;
 }
 
 .variety-name {
-    font-size: 0.98rem;
+    font-size: 1.05rem;
     color: var(--text-white);
 }
 
@@ -378,40 +462,50 @@ body {
     color: var(--champagne-gold);
 }
 
-.variety-desc {
-    font-size: 0.8rem;
+.variety-name small {
     color: var(--text-muted);
-    line-height: 1.4;
+    font-size: 0.82rem;
+}
+
+.variety-desc {
+    font-size: 0.86rem;
+    color: var(--text-muted);
+    line-height: 1.45;
 }
 
 .variety-price {
-    font-size: 0.82rem;
+    font-size: 0.9rem;
     font-weight: bold;
     color: var(--gold-light);
-    margin-top: 2px;
+    margin-top: 3px;
 }
 
 .btn-add-cart {
-    background: transparent;
-    border: 1px solid var(--champagne-gold);
-    color: var(--champagne-gold);
-    padding: 8px 12px;
-    border-radius: 7px;
-    font-size: 0.85rem;
+    background: var(--champagne-gold);
+    border: none;
+    color: var(--bg-dark);
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-size: 0.9rem;
     font-weight: bold;
     cursor: pointer;
-    transition: all 0.2s;
-    width: 100%;
+    transition: transform 0.2s, opacity 0.2s;
+    white-space: nowrap;
+}
+
+.btn-add-cart.natural-btn {
+    background: #86efac;
+    color: #06281e;
 }
 
 .btn-add-cart:hover {
-    background: var(--champagne-gold);
-    color: var(--bg-dark);
+    transform: scale(1.03);
+    opacity: 0.92;
 }
 
 /* Panier / Carrinho Misto */
 .panier-box {
-    background: rgba(0, 0, 0, 0.35);
+    background: rgba(0, 0, 0, 0.4);
     border: 1px solid var(--gold-border);
     border-radius: 12px;
     padding: 18px;
@@ -447,11 +541,11 @@ body {
 }
 
 .empty-panier {
-    font-size: 0.84rem;
+    font-size: 0.85rem;
     color: var(--text-muted);
     text-align: center;
     padding: 14px 10px;
-    border: 1px dashed rgba(255, 255, 255, 0.1);
+    border: 1px dashed rgba(255, 255, 255, 0.12);
     border-radius: 8px;
 }
 
@@ -461,19 +555,26 @@ body {
     align-items: center;
     background: var(--card-bg);
     border: 1px solid rgba(255, 255, 255, 0.08);
-    padding: 10px 12px;
+    padding: 12px 14px;
     border-radius: 8px;
     gap: 10px;
 }
 
 .panier-row-title {
-    font-size: 0.88rem;
+    font-size: 0.92rem;
     color: var(--text-white);
 }
 
 .panier-row-sub {
-    font-size: 0.76rem;
+    font-size: 0.78rem;
     color: var(--champagne-gold);
+}
+
+.panier-row-taste {
+    font-size: 0.75rem;
+    color: #a7f3d0;
+    font-style: italic;
+    margin-top: 2px;
 }
 
 .panier-controls {
@@ -486,8 +587,8 @@ body {
     background: var(--champagne-gold);
     color: var(--bg-dark);
     border: none;
-    width: 26px;
-    height: 26px;
+    width: 28px;
+    height: 28px;
     border-radius: 5px;
     font-weight: bold;
     font-size: 1rem;
@@ -495,10 +596,10 @@ body {
 }
 
 .panier-controls span {
-    min-width: 20px;
+    min-width: 22px;
     text-align: center;
     font-weight: bold;
-    font-size: 0.92rem;
+    font-size: 0.95rem;
 }
 
 .subtotal-box {
@@ -515,13 +616,13 @@ body {
 }
 
 .gold-amount {
-    font-size: 1.75rem;
+    font-size: 1.8rem;
     color: var(--champagne-gold);
     font-weight: bold;
 }
 
 .shipping-note {
-    font-size: 0.8rem;
+    font-size: 0.82rem;
     color: var(--champagne-gold);
     background: rgba(230, 198, 135, 0.08);
     padding: 8px 12px;
@@ -529,9 +630,9 @@ body {
     border-left: 3px solid var(--champagne-gold);
 }
 
-/* Preferência de Pagamento (TWINT / Online) */
+/* Preferência de Pagamento */
 .payment-pref-section {
-    margin-bottom: 22px;
+    margin-bottom: 20px;
 }
 
 .payment-pref-section > label {
@@ -557,11 +658,6 @@ body {
     border-radius: 8px;
     cursor: pointer;
     font-size: 0.88rem;
-    transition: border-color 0.2s;
-}
-
-.pay-option:hover {
-    border-color: var(--champagne-gold);
 }
 
 .pay-option input[type="radio"] {
@@ -574,15 +670,31 @@ body {
     color: var(--text-muted);
 }
 
-.address-input {
-    margin-bottom: 22px;
+/* Oferta / Dedicatória & Morada */
+.gift-input {
+    margin-bottom: 18px;
 }
 
+.gift-input label,
 .address-input label {
     display: block;
     font-size: 0.9rem;
-    margin-bottom: 8px;
+    margin-bottom: 7px;
     color: var(--text-muted);
+}
+
+.gift-input input {
+    width: 100%;
+    background: var(--bg-dark);
+    border: 1px solid var(--gold-border);
+    border-radius: 8px;
+    color: var(--text-white);
+    padding: 11px 12px;
+    font-size: 0.92rem;
+}
+
+.address-input {
+    margin-bottom: 22px;
 }
 
 .address-input textarea {
@@ -604,7 +716,7 @@ body {
     border: none;
     padding: 16px;
     border-radius: 10px;
-    font-size: 1.08rem;
+    font-size: 1.05rem;
     font-weight: bold;
     cursor: pointer;
     display: flex;
@@ -619,30 +731,9 @@ body {
     background-color: #20ba5a;
 }
 
-/* Gallery */
-.gallery-section {
-    padding: 50px 20px;
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 15px;
-}
-
-.gallery-card img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 10px;
-    border: 1px solid var(--gold-border);
-}
-
-/* Social Section (Instagram + TikTok) */
+/* Social Section */
 .tiktok-elite {
-    padding: 50px 20px;
+    padding: 45px 20px;
     text-align: center;
 }
 
@@ -651,7 +742,7 @@ body {
     border: 1px solid var(--gold-border);
     border-radius: 16px;
     padding: 35px;
-    max-width: 720px;
+    max-width: 780px;
     margin: 0 auto;
 }
 
@@ -670,7 +761,7 @@ body {
 .social-buttons-row {
     display: flex;
     justify-content: center;
-    gap: 14px;
+    gap: 12px;
     flex-wrap: wrap;
 }
 
@@ -678,23 +769,27 @@ body {
     display: inline-block;
     background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
     color: white;
-    padding: 12px 22px;
+    padding: 12px 20px;
     border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
-    font-size: 0.92rem;
+    font-size: 0.9rem;
     transition: opacity 0.2s, transform 0.2s;
+}
+
+.instagram-link.sabores {
+    background: linear-gradient(45deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
 }
 
 .tiktok-link {
     display: inline-block;
     background: #fe2c55;
     color: white;
-    padding: 12px 22px;
+    padding: 12px 20px;
     border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
-    font-size: 0.92rem;
+    font-size: 0.9rem;
     transition: opacity 0.2s, transform 0.2s;
 }
 
@@ -712,15 +807,23 @@ body {
     font-size: 0.9rem;
 }
 
+.artisan-signature {
+    color: var(--champagne-gold);
+    font-style: italic;
+    font-size: 1rem;
+    margin-bottom: 12px;
+}
+
 .footer-terms {
     margin-top: 10px;
     font-size: 0.8rem;
-    max-width: 720px;
+    max-width: 760px;
     margin-left: auto;
     margin-right: auto;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
     .hero-title { font-size: 1.85rem; }
-    .checkout-card { padding: 22px 16px; }
+    .checkout-card { padding: 22px 15px; }
+    .category-photos-quad { grid-template-columns: repeat(2, 1fr); }
 }
